@@ -4,6 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SocialDL — Download Anything</title>
+  <!-- ═══ AD NETWORKS ═══════════════════════════════════════ -->
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9524695784535010" crossorigin="anonymous"></script>
+  <!-- Monetag -->
+  <meta name="monetag" content="48e3d82ef7e4fbd9aae18b9dd7019404">
+  <!-- Adsterra -->
+  <script src="https://pl28962384.profitablecpmratenetwork.com/57/f7/ae/57f7aed2698e4a71d4ab52440fc8dc42.js"></script>
+  <!-- ════════════════════════════════════════════════════════ -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
@@ -276,6 +284,20 @@
     .update-trigger:hover { border-color: var(--accent); color: var(--accent); }
     .update-trigger:disabled { opacity: 0.4; cursor: not-allowed; }
 
+    /* ─── AD SLOTS ───────────────────────────────── */
+    .ad-slot {
+      width: 100%; margin: 20px 0;
+      display: flex; justify-content: center; align-items: center;
+      min-height: 90px; border-radius: var(--radius);
+      overflow: hidden; background: transparent;
+    }
+    .ad-slot ins { display: block; width: 100%; }
+    .ad-label {
+      font-family: var(--mono); font-size: 10px; letter-spacing: 1px;
+      color: var(--muted); text-align: center; margin-bottom: 4px;
+      text-transform: uppercase; opacity: 0.5;
+    }
+
     /* ─── FOOTER ──────────────────────────────────── */
     footer { text-align: center; padding: 40px 0 0; border-top: 1px solid var(--border); }
     .footer-note { font-family: var(--mono); font-size: 12px; color: var(--muted); line-height: 1.7; }
@@ -304,6 +326,18 @@
       <p class="subtitle">// Instagram · TikTok · Twitter · Facebook · Vimeo · and more</p>
       <div class="platforms" id="platformsList"></div>
     </header>
+
+    <!-- AD SLOT: TOP LEADERBOARD -->
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-slot" id="ad-top">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-9524695784535010"
+           data-ad-slot="auto"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
     <!-- INPUT CARD -->
     <div class="input-card">
@@ -361,6 +395,18 @@
       </div>
     </div>
 
+    <!-- AD SLOT: MID RECTANGLE -->
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-slot" id="ad-mid">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-9524695784535010"
+           data-ad-slot="auto"
+           data-ad-format="rectangle"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
     <!-- HISTORY -->
     <div class="history-section" id="historySection" style="display:none">
       <div class="history-header">
@@ -368,6 +414,18 @@
         <button class="clear-history" id="clearHistory">Clear all</button>
       </div>
       <div class="history-list" id="historyList"></div>
+    </div>
+
+    <!-- AD SLOT: BOTTOM LEADERBOARD -->
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-slot" id="ad-bottom">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-9524695784535010"
+           data-ad-slot="auto"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
 
     <footer>
