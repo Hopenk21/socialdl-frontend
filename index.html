@@ -301,7 +301,7 @@
         <div class="logo-text">SocialDL</div>
       </div>
       <h1>Download <span>Anything</span><br>From Anywhere</h1>
-      <p class="subtitle">// paste a URL · pick quality · save it</p>
+      <p class="subtitle">// Instagram · TikTok · Twitter · Facebook · Vimeo · and more</p>
       <div class="platforms" id="platformsList"></div>
     </header>
 
@@ -388,7 +388,7 @@
     // Set RAILWAY_BACKEND_URL in config.js or env — falls back to same origin
     const API_BASE = window.SOCIALDL_API || '';
 
-    const PLATFORMS = ['YouTube','Instagram','TikTok','Twitter/X','Facebook','Vimeo','Twitch','Reddit','Dailymotion','SoundCloud'];
+    const PLATFORMS = ['Instagram','TikTok','Twitter/X','Facebook','Vimeo','Twitch','Reddit','Dailymotion','SoundCloud','Bilibili'];
 
     const PLATFORM_ICONS = {
       'YouTube':'▶','Instagram':'📷','TikTok':'🎵','Twitter/X':'𝕏','Facebook':'f',
@@ -431,7 +431,6 @@
 
     // ─── URL INPUT DETECTION ─────────────────────────────────
     const DOMAIN_MAP = {
-      'youtube.com':'YouTube','youtu.be':'YouTube',
       'instagram.com':'Instagram','tiktok.com':'TikTok',
       'twitter.com':'Twitter/X','x.com':'Twitter/X',
       'facebook.com':'Facebook','fb.watch':'Facebook',
